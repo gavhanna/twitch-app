@@ -1,0 +1,147 @@
+// Variables
+
+// Overall styles
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  max-width: 100vw;
+}
+#wrapper {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+// Specific Styles
+// Header
+ .header {
+   position: relative;
+   min-height: 90px;
+   margin: 50px 0px;;
+   h1 {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 4rem;
+   }
+   ul {
+     list-style: none;
+     li {
+       cursor: pointer;
+     }
+   }
+ }
+
+// Content
+
+.online {
+  display: flex;
+  flex-wrap: wrap;
+  order: 0;
+  background-color: skyblue;
+  transition: all .2s;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+  &:hover {
+    background-color: darken(skyblue, 20%);
+  }
+  p {
+    margin: 20px auto;
+    text-align: center;
+    min-width: 120px;
+  }
+  .info {
+    margin: auto;
+    text-align: center;
+  }
+}
+.offline {
+  order: 1;
+  background-color: lighten(orange, 20%);
+  p {
+    text-align: center;
+    padding: 40px 5px;
+  }
+}
+
+.removed {
+  order: 2;
+  background-color: lighten(firebrick, 20%);
+  p {
+    text-align: center;
+    padding: 40px 5px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.channel {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px;
+
+}
+
+.online-icon {
+  @media screen and (max-width: 500px) {
+    margin: 20px auto 10px auto;
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .nav {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: all .2s;
+    flex: 1;
+    padding: 10px;
+    &:hover {
+      border: 2px solid black;
+      background-color: white;
+      flex:2;
+    }
+  }
+}
+
+.fa-circle {
+  margin: 0px 5px;
+}
+
+.yellow {background-color: lighten(orange, 20%);}
+.blue {background-color: darken(skyblue, 20%);}
+.green {background-color: lighten(green, 40%);}
