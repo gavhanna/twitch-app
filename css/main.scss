@@ -47,9 +47,10 @@ a {
   margin: 50px 0px 30px 0px;
   ;
   h1 {
-    border: 2px dashed black;
-    border-left: 5px solid;
-    border-right: 5px solid;
+    letter-spacing: 9px;
+    border: 10px dotted black;
+    border-left: 15px solid;
+    border-right: 15px solid;
     max-width: 400px;
     font-weight: lighter;
     font-family: 'Monoton', cursive;
@@ -89,16 +90,24 @@ a {
             flex-direction: column;
   }
   &:hover {
-    background-color: darken(skyblue, 20%);
+    background-color: darken(skyblue, 30%);
+  }
+  h2 {
+    text-align: center;
+    margin-top: 20px;
   }
   p {
     margin: 20px auto;
     text-align: center;
     min-width: 120px;
   }
+  .isOnline {
+    min-width: 200px;
+  }
   .info {
     margin: auto;
     text-align: center;
+    min-width: 200px;
   }
 }
 
@@ -144,9 +153,14 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 5px solid black;
+  //border-radius: 10px;
   margin: 5px;
+  transition: all .2s;
+  &:hover {
+    border-top: 5px dotted black;
+    border-bottom: 5px dotted black;
+  }
 }
 
 .icon {
@@ -162,6 +176,9 @@ a {
   }
 }
 
+
+// Nav styles
+
 ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -173,8 +190,9 @@ ul {
           justify-content: center;
   width: 100%;
   .nav {
-    border: 2px solid white;
-    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    //border-radius: 10px;
     margin: 10px;
     text-align: center;
     -webkit-transition: all .2s;
@@ -185,7 +203,10 @@ ul {
             flex: 1;
     padding: 10px;
     &:hover {
-      border: 2px solid black;
+      letter-spacing: 3px;
+      border: 2px dotted black;
+      border-left: 4px solid black;
+      border-right: 4px solid black;
       background-color: white;
       -webkit-box-flex: 2;
       -webkit-flex: 2;
@@ -193,10 +214,6 @@ ul {
               flex: 2;
     }
   }
-}
-
-.fa-circle {
-  margin: 0px 5px;
 }
 
 .yellow {

@@ -40,9 +40,10 @@ a {
   min-height: 90px;
   margin: 50px 0px 30px 0px; }
   .header h1 {
-    border: 2px dashed black;
-    border-left: 5px solid;
-    border-right: 5px solid;
+    letter-spacing: 9px;
+    border: 10px dotted black;
+    border-left: 15px solid;
+    border-right: 15px solid;
     max-width: 400px;
     font-weight: lighter;
     font-family: 'Monoton', cursive;
@@ -78,14 +79,20 @@ a {
       -ms-flex-direction: column;
       flex-direction: column; } }
   .online:hover {
-    background-color: #30aadc; }
+    background-color: #1f8dba; }
+  .online h2 {
+    text-align: center;
+    margin-top: 20px; }
   .online p {
     margin: 20px auto;
     text-align: center;
     min-width: 120px; }
+  .online .isOnline {
+    min-width: 200px; }
   .online .info {
     margin: auto;
-    text-align: center; }
+    text-align: center;
+    min-width: 200px; }
 
 .offline {
   -webkit-box-ordinal-group: 2;
@@ -124,9 +131,12 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 5px; }
+  border: 5px solid black;
+  margin: 5px;
+  transition: all .2s; }
+  .channel:hover {
+    border-top: 5px dotted black;
+    border-bottom: 5px dotted black; }
 
 .icon {
   width: 100px;
@@ -149,8 +159,8 @@ ul {
   justify-content: center;
   width: 100%; }
   ul .nav {
-    border: 2px solid white;
-    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid black;
     margin: 10px;
     text-align: center;
     -webkit-transition: all .2s;
@@ -161,15 +171,15 @@ ul {
     flex: 1;
     padding: 10px; }
     ul .nav:hover {
-      border: 2px solid black;
+      letter-spacing: 3px;
+      border: 2px dotted black;
+      border-left: 4px solid black;
+      border-right: 4px solid black;
       background-color: white;
       -webkit-box-flex: 2;
       -webkit-flex: 2;
       -ms-flex: 2;
       flex: 2; }
-
-.fa-circle {
-  margin: 0px 5px; }
 
 .yellow {
   background-color: #ffc966; }
